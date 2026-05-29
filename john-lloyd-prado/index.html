@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal resume and portfolio" />
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="top" class="page-top" tabindex="-1"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-logo" href="#top" data-field="name"></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-inner reveal">
+          <p class="eyebrow" data-field="location"></p>
+          <h1 id="hero-title" class="hero-title">
+            <span data-field="name"></span>
+          </h1>
+          <p class="hero-subtitle" data-field="title"></p>
+          <p class="hero-tagline" data-field="tagline"></p>
+          <div class="hero-actions" id="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#projects">View my work</a>
+          </div>
+          <ul class="hero-links" id="hero-links" aria-label="Social links"></ul>
+        </div>
+        <div class="hero-accent" aria-hidden="true"></div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">About</p>
+            <h2 id="about-title">A bit about me</h2>
+          </div>
+          <div class="about-grid reveal">
+            <div class="about-text" id="about-text"></div>
+            <aside class="about-card">
+              <h3>Quick facts</h3>
+              <dl class="facts-list" id="facts-list"></dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Experience</p>
+            <h2 id="experience-title">Where I've worked</h2>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Selected work</p>
+            <h2 id="projects-title">Projects & contributions</h2>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Skills</p>
+            <h2 id="skills-title">What I bring to the table</h2>
+          </div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <section class="section education" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-label">Education</p>
+            <h2 id="education-title">Background</h2>
+          </div>
+          <div class="education-list" id="education-list"></div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-card reveal">
+            <p class="section-label">Contact</p>
+            <h2 id="contact-title">Let's connect</h2>
+            <p class="contact-copy">
+              Open to new opportunities, collaborations, and interesting conversations.
+            </p>
+            <div class="contact-actions" id="contact-actions"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> <span data-field="name"></span>. Built with care.</p>
+        <a href="#top" class="back-to-top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
