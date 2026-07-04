@@ -40,6 +40,9 @@ function renderAbout(data) {
 }
 
 function renderResumeButton(data) {
+  // Resume PDF button hidden from portfolio for now.
+  // To re-enable, uncomment the block below.
+  /*
   if (!data.resumePdf) return;
 
   const resumeBtn = document.createElement("a");
@@ -51,6 +54,7 @@ function renderResumeButton(data) {
 
   const heroActions = document.getElementById("hero-actions");
   if (heroActions) heroActions.appendChild(resumeBtn);
+  */
 }
 
 function renderLinks(data) {
@@ -68,9 +72,13 @@ function renderLinks(data) {
   const contactActions = document.getElementById("contact-actions");
   const contactLinks = [
     { label: `Email ${data.name.split(" ")[0]}`, url: `mailto:${data.email}`, primary: true },
+    // Resume PDF link hidden from portfolio for now.
+    // To re-enable, uncomment the block below.
+    /*
     ...(data.resumePdf
       ? [{ label: "View resume (PDF)", url: data.resumePdf, primary: false, external: true }]
       : []),
+    */
     ...data.links.map((link) => ({ label: link.label, url: link.url, primary: false })),
   ];
 
