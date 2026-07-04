@@ -4,7 +4,7 @@ const RESUME = {
   tagline: "Helping people and systems work better together.",
   location: "Calamba City, Laguna, Philippines",
   email: "johnlloyd.prado1@gmail.com",
-  phone: "+63 968 628 2034",
+  phone: "+63 968 *** 2034",
   resumePdf: "resume.pdf",
   links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/john-lloyd-prado-a21584302", icon: "linkedin" },
